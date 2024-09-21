@@ -11,7 +11,8 @@ int main(){
   vector<int>::iterator iter = find(arr.begin(),arr.end(),ele);
   if(iter!=arr.end()){
         cout << "Element " << ele << " found at position : ";
-        cout << iter - arr.begin() + 1 << endl;
+        int index= iter - arr.begin();
+        cout<<index<<endl;
   }else{
     cout<<"element: "<<ele<<"does not exits in the arr"<<endl;
   }
